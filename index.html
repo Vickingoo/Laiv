@@ -8,18 +8,22 @@
     <title>Newsletter Laiv</title>
     <link rel="stylesheet" type="text/css" hs-webfonts="true"
         href="https://fonts.google.com/specimen/Montserrat?query=montserrat#standard-styles" />
-    <title>Newsletter Laiv</title>
     <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
         table {
             border-collapse: collapse;
-            border: 2px solid rgb(100, 100, 100);
-            letter-spacing: 1px;
-            font-family: sans-serif;
-            font-size: .7rem;
+            font-family: Montserrat, arial, sans-serif;
             outline: 1px solid red;
         }
 
         tr {
+            text-align: center;
             outline: 1px solid green;
         }
 
@@ -28,185 +32,271 @@
         }
 
         .td-head {
-            text-align: center; 
-            background-image: url(img/banner600x159px.jpg); 
+            text-align: center;
+            background-image: url(img/banner600x159px.jpg);
             background-size: cover;
             padding: 2em;
         }
 
-        a {
-            text-decoration: underline;
-            color: inherit;
-            font-weight: bold;
-            color: #253342;
+        .tr-img-ppal {
+            position: static;
+            top: 0;
+            left: 0;
         }
 
         h1 {
-            font-size: 56px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            color: #444;
         }
 
-        .body-sup {
-            font-size: 28px;
-            font-weight: 900;
+        h2 {
+            font-size: 1.2em;
+            font-weight: bold;
             color: #444;
             text-align: center;
         }
 
         h3 {
-            font-size: 22px;
-            font-weight: 400;
-            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            color: #1a9cd9;
             text-align: center;
         }
 
-        p {
+        .p1 {
             color: #777;
+            font-size: 1em;
             font-weight: 100;
             text-align: center;
             ;
         }
 
-        .body-med {
-            font-size: 16px;
+        .p2 {
             color: #777;
+            font-size: 0.9em;
             font-weight: 100;
-            text-align: justify;
-            ;
+            text-align: center;
+            margin-top: 1em;
         }
 
-        #email {
-            margin: auto;
-            width: 600px;
-            background-color: white;
+        .p-href-img {
+            color: #1a9cd9;
+            font-size: .9em;
+            font-weight: 100;
+            text-align: center;
+            margin: 2em 0em;
         }
 
-        .button-img-ppal {
-            font: inherit;
-            background-color: #fff;
-            border: none;
+        .p-href-icon {
+            color: #1a9cd9;
+            font-size: .7em;
+            font-weight: 100;
+            text-align: center;
+            margin: 2em 0em;
         }
 
-        .subtle-link {
-            font-size: 9px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #cbd6e2;
+        .body-sup {
+            font-size: 1em;
+            font-weight: 900;
+            color: #444;
+            text-align: center;
         }
     </style>
 </head>
 
-<body backgroundcolor="#fff" style="
-      width: 100%;
-      margin: auto 0;
-      padding: 0;
-      font-family: Montserrat, sans-serif;
-      font-size: 18px;
-      color: #777;
-      ">
-    <!-- Head -->
-    <table width="100%">
+<!-- Head -->
 
-        <tr>
-            <td class="td-head">
-                <img alt="logo Laiv" src="img/logo-laiv.png" margin="5em";>
-                <h3>¡Te traemos <strong>nueva colección!</strong></h3>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img alt="logo colección" src="img/logo-putty.png"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img alt="imagen principal" src="img/img-ppal.jpg" width="100%">
-            </td>
-        </tr>
+<table width="100%">
+    <tr>
+        <td class="td-head">
+            <img alt="logo Laiv" src="img/logo-laiv.png" margin=5em ;>
+            <h1 style="color: #fff;">¡Te traemos nueva colección!</h1>
+        </td>
+    </tr>
+    <tr>
         <td>
-            <img alt="botón enlace a web" src="img/mano-info.png" />
+            <img alt="logo colección" src="img/logo-putty.png" />
+        </td>
+    </tr>
+    <tr class="tr-img-ppal">
+        <td>
+            <img alt="imagen principal" src="img/img-ppal.jpg" width="100%">
+        </td>
+    </tr>
+    <td>
+        <img alt="botón enlace a web" src="img/mano-info.png" style="margin-bottom: 1em" a href="https://www.laiv.com/es/tienda/producto/coleccion-tubitos-kris-kros-bola-60mm"/>
+    </td>
+</table>
+
+<!-- Body superior img ppal-->
+
+<table>
+    <tr>
+        <td>
+            <h2>Más para ti</h2>
+            <p class="p1" style="width: 100%; padding: 0em 7em; margin: 1em 0em;">
+                En Laiv además de las mejores máquinas, encontrarás todo tipo de productos para rellenarlas, desde
+                colecciones de juguetes a bolas saltarinas, caramelos y snacks.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<!-- Body medio-->
+
+<table style="margin-bottom: 3em">
+    <tr>
+        <td style="width: 10%;"></td>
+        <td style="width: 30%; padding: 1em 1em; margin-bottom: 2em">
+            <img alt="colecciones" src="img/img-colecciones.png" width=100% style="margin-bottom: 2em;" />
+            <h2 style="text-align: justify">Colecciones para todos los gustos</h2>
+            <p class="p2" style="text-align: justify; ">
+                Nuestras mejores colecciones disponibles en todos los tamaños, da igual cual sea tu máquina ¡las
+                rellenamos todas!.
+                <br>
+                B50, B60, B68, B90 y B100.
+            </p>
         </td>
 
-
-        <!-- <button class="button-img-ppal">info
-            </button> -->
+        <td style="width: 30%; padding: 0em 1em; margin-bottom: 2em">
+            <img alt="máquinas" src="img/img-maquinas.png" width="100%" style="margin-bottom: 2em;" />
+            <h2 style="text-align: justify">Las mejores máquinas del mercado</h2>
+            <p class="p2" style="text-align: justify">
+                Somos fabricantes. Nuestras máquinas están hechas 100% en España, con lo que contarás con piezas y
+                recambios para tenerlas siempre a punto, sin intermediarios.
+            </p>
         </td>
-    </table>
+        <td style="width: 10%;"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <p class="p-href-img"><a href="https://www.laiv.com/es/tienda/categoria-producto/coleccioness"
+                    style="color:#1a9cd9;">Ver más >></a></p>
 
-    <!-- Body superior -->
+        </td>
+        <td>
+            <p class="p-href-img"><a href="https://www.laiv.com/es/tienda/categoria-producto/maquinas-expendedoras"
+                    style="color:#1a9cd9;">Ver más >></a></p>
 
-    <table role="presentation" border="0" cellpadding="0" cellspacing="10px" style="padding: 30px 30px 30px 60px"> 
-        <tr>
-            <td>
-                <h2 class="body-sup" Más para ti></h2>
-                <p>
-                    En Laiv además de las mejores máquinas, encontrarás todo tipo de productos para rellenarlas, desde
-                    colecciones de juguetes a bolas saltarinas, caramelos y snacks.
+        </td>
+        <td></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <div style="width: 100%; min-width: 100%; text-align: center; background-color: red; border-top: 1px solid;"></div>
+        </td>
+    </tr>
+</table>
+
+<!-- Body inferior a partir de linea hr -->
+
+<table style="margin-top: 3em">
+    <tr>
+        <td style="width: 10%;">
+        <td style="width: 20%; padding: 0em 1em;">
+            <img alt="máquinas" src="img/icono-maquinas.jpg" width=80% />
+            <h3 style="text-align: center">Máquinas</h2>
+                <p class="p2" style="text-align: center; ">
+                    Nuestro catálogo de máquinas, con todos los modelos disponibles y en distintos colores.
                 </p>
-
-            </td>
-        </tr>
-    </table>
-
-    <!-- Body medio-->
-
-    <table role="presentation" border="0" cellpadding="0" cellspacing="10px" width="100%"
-        style="padding: 30px 30px 30px 60px">
-        <tr>
-            <td>
-                <img alt="Blog" src="img/img-colecciones.png" width="200px" />
-
-                <h2>Colecciones para todos los gustos</h2>
-                <p class="body-med">
-                    Nuestras mejores colecciones disponibles en todos los tamaños, da igual cual sea tu máquina ¡las
-                    rellenamos todas!.
-                    <br>
-                    B50, B60, B68, B90 y B100.
+        </td>
+        <td style="width: 20%; padding: 0em 1em;">
+            <img alt="cápsulas" src="img/icono-capsulas.jpg" width=80% />
+            <h3 style="text-align: center">Cápsulas</h2>
+                <p class="p2" style="text-align: center; ">
+                    La más amplia variedad de tamaños para satisfacer todas las necesidades.
                 </p>
-            </td>
+        </td>
+        <td style="width: 20%; padding: 0em 1em;">
+            <img alt="juguetes" src="img/icono-juguetes.jpg" width=80% />
+            <h3 style="text-align: center">Juguetes</h2>
+                <p class="p2" style="text-align: center; ">
+                    También surtimos gran variedad de juguetes para grúa y nuestras bolas Click and Play.
+        </td>
+        <td style="width: 10%;">
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align: center;">
+            <p class="p-href-icon"><a href="https://www.laiv.com/es/tienda/categoria-producto/maquinas-expendedoras"
+                    style="color:#1a9cd9;">Ver más >></a></p>
 
-            <td>
-                <img alt="Shopping" src="img/img-maquinas.png" width="200px" />
-                <h2>Las mejores máquinas del mercado</h2>
-                <p class="body-med">
-                    Somos fabricantes. Nuestras máquinas están hechas 100% en España, con lo que contarás con piezas y
-                    recambios para tenerlas siempre a punto. sin intermediarios.
-                </p>
-            </td>
-        </tr>
+        </td>
+        <td style="text-align: center;">
+            <p class="p-href-icon"><a href="https://www.laiv.com/es/tienda/categoria-producto/maquinas-expendedoras"
+                    style="color:#1a9cd9;">Ver más >></a></p>
 
-        <tr>
-            <td><button>Button 2</button></td>
-            <td><button>Button 3</button></td>
-        </tr>
-    </table>
+        </td>
+        <td style="text-align: center;">
+            <p class="p-href-icon"><a href="https://www.laiv.com/es/tienda/categoria-producto/maquinas-expendedoras"
+                    style="color:#1a9cd9;">Ver más >></a></p>
 
-    <!-- Banner Row -->
-    <table role="presentation" bgcolor="#EAF0F6" width="100%" style="margin-top: 50px">
-        <tr>
-            <td align="center" style="padding: 30px 30px">
-                <h2>Nullam porta arcu</h2>
-                <p>
-                    Nam vel lobortis lorem. Nunc facilisis mauris at elit pulvinar,
-                    malesuada condimentum erat vestibulum. Pellentesque eros tellus,
-                    finibus eget erat at, tempus rutrum justo.
-                </p>
-                <a href="#"> Ask us a question</a>
-            </td>
-        </tr>
-    </table>
+        </td>
+        <td></td>
+    </tr>
+</table>
+<table style="width: 100%; margin: 2em 0em;">
+    <tr>
+        <td>
+            <h1 style="color: #444; margin: .5em 0em">¡Síguenos en redes sociales!</h1>
+            <img src="img/facebook 50x50 px.png" alt="facebook-laiv" style="margin: 0em .5em">
+            <a href="https://www.facebook.com/laiv.SL/"></a>
+            <img src="img/twitter 50x50 px.png" alt="twitter-laiv" style="margin: 0em .5em">
+            <a href="https://twitter.com/LaivSl"></a>
+            <img src="img/instagram 50x50 px.png" alt="instagram-laiv" style="margin: 0em .5em">
+            <a href="https://www.instagram.com/laiv.sl/"></a>
+            <img src="img/pinterest 50x50 px.png" alt="pinterest-laiv" style="margin: 0em .5em">
+            <a href="https://www.pinterest.es/laivSL/"></a>
+        </td>
+    </tr>
+</table>
 
-    <!-- Unsubscribe Footer -->
+<!-- Footer -->
 
-    <table role="presentation" bgcolor="#F5F8FA" width="100%">
-        <tr>
-            <td align="left" style="padding: 30px 30px">
-                <p style="color: #99acc2">Made with &hearts; at HubSpot HQ</p>
-                <a class="subtle-link" href="#"> Unsubscribe </a>
-            </td>
-        </tr>
-    </table>
-    </div>
+<table style="width: 100%">
+    <tr>
+        <td class="td-head">
+            <img alt="logo Laiv" src="img/icono-c&p-b.png" style="margin: 0em 1em">
+            <img alt="logo Laiv" src="img/icono-laiv-b.png" style="margin: 0em 1em">
+            <img alt="logo Laiv" src="img/icono-happytoy-b.png" style="margin: 0em 1em">
+            <p style="color:#fff">
+                <strong>C/ Nereo, 13 CP 29004 <br>
+                    MÁLAGA (ESPAÑA)</strong>
+            </p>
+            <p class="p-href-icon"><a href="http://laiv.com" style="color:#fff;" font-size: .3em>visita nuestra web</a>
+            </p>
+            <p class="p-href-icon"><a href="https://www.laiv.com/es/boletin-noticias/cancelar-suscripcion" ;
+                    style="color:#fff;" font-size: .3em>darse de baja</a></p>
+        </td>
+    </tr>
+</table>
+
+<!-- Texto legal -->
+
+<table>
+    <td style="padding: 0em 7em; text-align: justify">
+        <p style="font-size: .2em; color: #777;">
+            Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de los Derechos Digitales
+            Este mensaje va dirigido, de manera exclusiva, a su destinatario y puede contener información confidencial y
+            sujeta al secreto profesional, cuya divulgación no está permitida por Ley. En caso de haber recibido este
+            mensaje por error, le rogamos que de forma inmediata, nos lo comunique mediante correo electrónico remitido
+            a nuestra atención y proceda a su eliminación, así como a la de cualquier documento adjunto al mismo.
+            Asimismo, le comunicamos que la distribución, copia o utilización de este mensaje, o de cualquier documento
+            adjunto al
+            mismo, cualquiera que fuera su finalidad, están prohibidas por la ley. En aras del cumplimiento del
+            Reglamento (UE)
+            2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, puede ejercer los derechos de acceso,
+            rectificación, cancelación, limitación, oposición y portabilidad de manera gratuita mediante correo
+            electrónico a <a href="mailto:laiv@laiv.com">laiv@laiv.com</a>
+        </p>
+    </td>
+</table>
+</div>
 </body>
 
 </html>
